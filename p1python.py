@@ -18,8 +18,8 @@ os.system("nmap -sn "+red)
 
 import os
 contador = 0
-red = "192.168.2."
-for i in range(10):
+red = "200.33.171."
+for i in range(254):
     i+=1
     respuesta = os.system("ping "+red+str(i))
     if respuesta ==0: print("HOST PRENDIDO"); contador+=1; print ("Numero de host prendidos al momento: "+ str(contador))
